@@ -20,8 +20,8 @@ class SQLRunner
     @db.execute_batch(sql)
   end
 
-  def execute_querying
-    sql = File.read('lib/querying.rb')
+  def execute_data
+    sql = File.read('lib/data.sql')
     @db.execute_batch(sql)
   end
 end
